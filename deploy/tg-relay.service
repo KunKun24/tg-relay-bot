@@ -1,0 +1,30 @@
+[Unit]
+Description=Telegram 模块化双向机器人与克隆客服
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=www
+Group=www
+WorkingDirectory=/path/to/双向机器人克隆
+EnvironmentFile=/path/to/双向机器人克隆/.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONIOENCODING=utf-8
+Environment=TZ=Asia/Shanghai
+ExecStart=/path/to/双向机器人克隆/.venv/bin/python -u -m relayapp.runtime
+Restart=always
+RestartSec=5
+KillMode=control-group
+KillSignal=SIGTERM
+TimeoutStopSec=180
+StandardOutput=append:/path/to/logs/tg-relay-v2.log
+StandardError=inherit
+LimitNOFILE=65535
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
