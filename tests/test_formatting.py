@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 import asyncio
 from datetime import datetime, timezone, timedelta
@@ -164,7 +163,6 @@ def test_user_names_and_id_links_are_html_safe():
 @pytest.mark.parametrize('kind', ['text', 'photo', 'video', 'animation', 'document', 'voice', 'audio', 'sticker', 'video_note', 'contact', 'location'])
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 async def test_capture_and_send_all_media(kind, no_throttle):
     kwargs = dict(text='😀text', entities=[entity('bold', 2, 4)]) if kind == 'text' else dict(
@@ -351,4 +349,3 @@ async def test_cooldown_never_shortens(monkeypatch):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

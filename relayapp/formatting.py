@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """Lossless Telegram payloads, presentation helpers and process-local API pacing."""
 from __future__ import annotations
@@ -195,7 +194,6 @@ def _button_options(button):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 def parse_inline_buttons(text, entities=()) -> list:
     """Parse one row per line, with && separating buttons within each row."""
@@ -473,4 +471,3 @@ async def send_payload(bot, chat_id, payload, reply_markup=None, *, before_send=
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

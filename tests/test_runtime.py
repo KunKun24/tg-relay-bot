@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """Offline regressions for real PTB construction and process-local DNS routing."""
 import os
@@ -58,7 +57,6 @@ def resolver(monkeypatch):
 @pytest.mark.parametrize('raw', ['', '   ', ' , , '])
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 def test_dns_without_addresses_does_not_replace_resolver(monkeypatch, resolver, raw):
     original, calls = resolver
@@ -123,4 +121,3 @@ def test_dns_invalid_address_rejected_before_resolver_is_replaced(monkeypatch, r
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

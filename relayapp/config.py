@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 from __future__ import annotations
 
@@ -19,7 +18,6 @@ MAIN_ADMIN_ID = int(os.getenv('MAIN_ADMIN_ID', '0'))
 DB_PATH = os.getenv('RELAY_DB_PATH', str(ROOT / 'relay_bot.db'))
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 
 
@@ -40,4 +38,3 @@ def configure_logging():
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

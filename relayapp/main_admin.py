@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """Single platform administrator pages, pagination and confirmed VIP grants."""
 from __future__ import annotations
@@ -66,7 +65,6 @@ class MainAdminMixin:
         await query.edit_message_text("🔐 VIP功能要求\n关闭要求后，普通用户也可使用该功能；既有资源不会被删除。", reply_markup=K(rows))
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 
     async def _admin_callback(self, query, context):
@@ -148,4 +146,3 @@ class MainAdminMixin:
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

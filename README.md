@@ -42,3 +42,9 @@ runuser -u www -- env PYTHONDONTWRITEBYTECODE=1 PYTHON_DOTENV_DISABLED=1 \
 ## 交付边界
 
 源码交付不含 `.env`、机器人 Token、客户数据库、旧代码备份、虚拟环境、日志或私聊验收回执。实际升级保留的历史数据和私人备份仅留在服务器。Telegram 判定 Token 无效的克隆必须由所有者提供同一机器人的有效 Token；软件升级无法替换失效凭据。
+
+---
+
+## 关于 AIGC
+
+> 项目包含 AIGC 内容，AI 减少了开发时间；我们也认真审核了每一条代码。

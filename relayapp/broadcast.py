@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """SQLite durable per-bot recipient queues, without replaying uncertain sends."""
 from __future__ import annotations
@@ -104,7 +103,6 @@ class BroadcastService:
                 con.execute("UPDATE broadcast_jobs SET status='PAUSED',updated_at=? WHERE id=? AND status IN ('PENDING','RUNNING')",(time.time(),job_id))
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 
     async def tick(self, bot_lookup):
@@ -223,4 +221,3 @@ broadcasts = BroadcastService()
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

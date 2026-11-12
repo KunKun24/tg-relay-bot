@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """Confirmation driven owner actions, separate from lifecycle implementation."""
 from __future__ import annotations
@@ -25,7 +24,6 @@ class MainActionsMixin:
             [B("✅ 确认", callback_data=f"owner_confirm:{nonce}")], [B("❌ 取消", callback_data=f"manage:{bot_id}")]]))
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 
     async def _owner_callback(self, query, context):
@@ -142,4 +140,3 @@ class MainActionsMixin:
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

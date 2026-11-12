@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """Core invariants against synthetic temporary SQLite only; no Telegram/API calls."""
 import os
@@ -195,7 +194,6 @@ def test_invalid_mute_duration_does_not_write(db, duration):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 def test_auto_reply_drafts_disabled_ordering_and_payload(db):
     draft = clients.add_auto_reply(1, 'hello')
@@ -416,4 +414,3 @@ def test_remove_admin_cannot_remove_owner_and_clears_session(db, owned_bot):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

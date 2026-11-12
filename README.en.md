@@ -42,3 +42,9 @@ Tests use a temporary SQLite database and a fake network; they do not read the p
 ## Delivery scope
 
 The source delivery does not include `.env`, bot tokens, the customer database, backups of old code, the virtual environment, logs, or DM acceptance receipts. Historical data and private backups kept by an actual upgrade stay on the server only. Any clone whose token Telegram rejects must be given a valid token for the same bot by its owner; a software upgrade cannot replace invalid credentials.
+
+---
+
+## About AIGC
+
+> This project contains AIGC (AI-generated) content. AI shortened development time; every line of code was carefully reviewed.

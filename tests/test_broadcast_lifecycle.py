@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """Durable broadcast/lifecycle tests using synthetic SQLite and local fakes only."""
 import os
@@ -270,7 +269,6 @@ class FakeRuntime(lifecycle.LifecycleMixin):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 def fake_probe(monkeypatch, identity_id):
     class Probe:
@@ -549,4 +547,3 @@ async def test_retry_clones_backoff_caps_and_clears_after_success(db, monkeypatc
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创

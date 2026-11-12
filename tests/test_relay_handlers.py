@@ -1,6 +1,5 @@
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 """No polling, no tokens, no production DB: handler regressions against fakes."""
 import asyncio
@@ -216,7 +215,6 @@ def test_case_claim_transfer_close_and_notes(handler):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
 
 def test_group_rights_fail_closed_and_nonstaff_ignored(handler):
     ctx = context()
@@ -439,4 +437,3 @@ def test_inbound_wait_does_not_send_to_revoked_admin(handler, monkeypatch):
 
 # 困困双向机器人
 # 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
-# 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
