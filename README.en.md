@@ -28,6 +28,18 @@ runuser -u www -- .venv/bin/python scripts/health.py
 runuser -u www -- .venv/bin/python scripts/backup.py
 ```
 
+## Docker
+
+```bash
+cp .env.example .env      # set MAIN_BOT_TOKEN, MAIN_ADMIN_ID, etc.
+docker compose up -d --build
+```
+
+- The session database lives in the `data` volume (`/data/relay_bot.db`), so recreating the container keeps it
+- The bot uses long polling, so no ports need publishing
+- Multi-arch image (`linux/amd64`, `linux/arm64`): `ghcr.io/kunkun24/tg-relay-bot`
+
+
 ## Testing
 
 ```bash

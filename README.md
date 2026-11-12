@@ -28,6 +28,18 @@ runuser -u www -- .venv/bin/python scripts/health.py
 runuser -u www -- .venv/bin/python scripts/backup.py
 ```
 
+## Docker 部署
+
+```bash
+cp .env.example .env      # 填 MAIN_BOT_TOKEN、MAIN_ADMIN_ID 等
+docker compose up -d --build
+```
+
+- 会话数据库放在 `data` 数据卷（`/data/relay_bot.db`），重建容器不丢
+- 机器人走长轮询，不需要映射端口
+- 多架构镜像（`linux/amd64`、`linux/arm64`）：`ghcr.io/kunkun24/tg-relay-bot`
+
+
 ## 测试
 
 ```bash

@@ -1,0 +1,15 @@
+services:
+  relay:
+    build: .
+    image: ghcr.io/kunkun24/tg-relay-bot:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # SQLite 放数据卷，容器重建不丢会话
+      RELAY_DB_PATH: /data/relay_bot.db
+    volumes:
+      - data:/data
+
+volumes:
+  data:
